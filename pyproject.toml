@@ -32,7 +32,7 @@ SQLAlchemy = "1.4.27"
 psycopg2-binary = "2.9.2"
 asyncpg = "0.25.0"
 httpx = "^0.22.0"
-common = "^0.0.19"
+common = { git = "https://github.com/vre-charite-autodeploy/service_common.git", branch="main" }
 
 [tool.poetry.dev-dependencies]
 pytest = "6.2.5"
@@ -46,8 +46,3 @@ async-asgi-testclient = "^1.4.9"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
-name = "pilot"
-url = "https://git.bihealth.org/api/v4/groups/vre/-/packages/pypi/simple"
-default = true
